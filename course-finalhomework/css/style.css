@@ -1,0 +1,193 @@
+body{
+    font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti, sans-serif, serif;
+}
+.wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.topbar{
+    background-color: #F4F4F4;
+    text-align: right;
+    padding: 5px 5px;
+}
+.topbar a{
+    text-decoration: none;
+    padding-right: 5px;
+}
+.topbar a:not(:last-child):after{
+    content: "|";
+    color: #aaa;
+}
+.topbar .facebook{
+    color: #364994;
+}
+.topbar .twitter{
+    color: #2296EE;
+}
+.topbar img{
+    vertical-align:middle;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    background: url(../images/logo.png) no-repeat;
+    width: 224px;
+    height: 50px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.header .menu a{
+    padding: 0 5px;
+    padding-bottom: 10px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #32C98B;
+    text-align: center;
+}
+.header .menu a:hover{
+    border-bottom: 3px solid #32C98B;
+}
+.banner{
+    background: url(../images/banner.png);
+    height: 346px;
+    display: flex;
+    align-items: center;
+}
+.banner .title{
+    width: 100%;
+    padding: 40px;
+    background:#0000004D;
+}
+.banner h1{
+    color: #FFF;
+    font-size: 2.5rem;
+}
+.courselist .item{
+    display: flex;
+    /* justify-content: space-around; */
+    margin-bottom: 30px;
+}
+.courselist .item h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 10px 0;
+    text-align: center;
+}
+.courselist .item>li{
+    width: 33.3333%;
+    border-radius: 0% 0% 2% 2%;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    border-left: 1px solid rgb(206, 206, 206);
+    border-right: 1px solid rgb(206, 206, 206);
+    margin: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 20px;
+    font-size: 1.1rem;
+    box-shadow: 0px 3px rgb(216, 216, 216);
+    /* line-height: 1.3rem; */
+    text-align: justify;
+}
+.courselist .pic{
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.courselist .jquerycontent{
+    padding-left: 1.5rem;
+    list-style:outside;
+}
+.pricelist h2{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.pricelist .table{
+    width: 85%;
+    margin: 30px auto;
+}
+.pricelist .table th{
+    padding: 10px;
+    background-color: #F5F5F5;
+    border-top: 1px solid rgb(192, 192, 192);
+    border-bottom: 1px solid rgb(192, 192, 192);
+    text-align: left;
+}
+.pricelist .table td{
+    padding: 10px;
+    border-top: 1px solid rgb(192, 192, 192);
+    border-bottom: 1px solid rgb(192, 192, 192);
+}
+.table .green{
+    color: #1F8458;
+}
+.messages {
+
+    background: linear-gradient(#135338,#20895B);
+    margin: 20px auto;
+    color: #fff;
+    padding-top: 30px;
+}
+.messages h2{
+    display: block;
+    text-align: center;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    margin-bottom: 15px;
+}
+.block{
+    display: flex;
+    position: relative;
+}
+.block>div{
+    width: 50%;
+    margin: 20px 20px;
+}
+.block .pic{
+    background-color: #FFF;
+    border-radius: 4px;
+}
+.block label{
+    display: block;
+    margin-bottom: 2px;
+}
+.block input{
+    width: 99%;
+    margin-bottom: 10px;
+    outline-style: none ;
+    border: 1px solid #ccc; 
+    border-radius: 3px;
+    font-size: 1.3rem;
+}
+.block .submit{
+    text-align: right;
+}
+.block button{
+    color:#FFF;
+    background: #2DC581;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    border-width: 0px;
+    outline: none;
+    cursor: pointer; 
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.footer p{
+    line-height: 1.5rem;
+}
+.footer a{
+    color: #da4490;
+    text-decoration: none;
+}
