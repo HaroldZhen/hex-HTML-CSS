@@ -1,0 +1,287 @@
+body{
+    width: 1024px;
+    margin: 0 auto;
+    font-family: "Arial","Microsoft JhengHei","Lucida Grande",Helvetica,"Segoe UI Semibold", "Segoe UI";
+    background: #ecebeb;
+}
+header{
+    width: 100%;
+    position: relative;
+    background: url(./assets/img-headerShape.png) no-repeat;
+    height: 400px;
+}
+.profile{
+    display: flex;
+    position: relative;
+    top: 130px;
+    left: 130px;
+}
+.profile .profile-title h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 15px;
+}
+.profile .profile-title p{
+    text-align: center;
+    margin-top: 10px;
+    color: #4A4A4A;
+    
+}
+.profile .profile-title .userid{
+    font-size: 1rem;
+}
+.profile .profile-title .jobtitle{
+    font-size: 1.1rem;
+}
+.profile .profile-info{
+    margin: -20px 120px;
+}
+.profile .profile-info p{
+    color: #fff;
+    margin: 25px 0px;
+    font-size: 1.2rem;
+}
+.profile .profile-info img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+main {
+    margin-top: 50px;
+}
+main .skill h2{
+    color: #0000ff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 40px 20px;
+}
+
+.skill-items {
+    display: flex;
+    justify-content: space-around;
+}
+.skill-items>li{
+    width: 33.3333%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px #00000033;
+    border-radius: 3%;
+    margin: 0px 15px;
+    border:1px solid #00000020;
+    border-bottom:5px solid;
+    padding: 30px 15px;
+    background-color: #fff;
+}
+.skill-items h3{
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 20px 0px;
+}
+.skill-items .web-layout{
+    border-bottom-color:#F58D23;
+}
+.skill-items .js-node{
+    border-bottom-color:#539E43;
+}
+.skill-items .dev-helper{
+    border-bottom-color: #6762A6;
+}
+.skill-items .pic{
+    text-align: center;
+}
+.skill-items .skill-detail{
+    list-style:disc;
+    font-size: .8rem;
+    line-height: 1rem;
+    align-self: center;
+    padding: 0px 10px;
+}
+main .esperience h2{
+    color: #0000ff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 40px 20px;
+}
+.esperience {
+    margin-bottom: 60px;
+    position: relative;
+}
+.esperience .line{
+    background-color: #d8d8d8;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    width: 3px;
+    height: 90%;
+}
+
+.esperience .hexagon_top{
+    background: url(./assets/dot-start.png) no-repeat;
+    width: 32px;
+    height: 37px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.esperience  .bottomline {
+    background-color: #d8d8d8;
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    bottom: -12px;
+    left: 50%;
+    transform:translateX(-50%) translateY(-50%);
+    border-radius: 6px;
+    margin-top: 5%;
+  }
+
+.esperience .bigbox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-bottom: 50px;
+}
+.esperience .box{
+    position: relative;
+    border: 1px solid #FB56BF;
+    background-color: #fff;
+    border-radius: 6px;
+    margin: 8px 0px;
+    padding: 10px;
+    width: 330px;
+}
+.esperience .box:nth-child(odd)::before{
+    content: ' ';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: -42px;
+    background: url(./assets/dot-timeItem.png) no-repeat;
+
+}
+.esperience .box:nth-child(odd){
+    margin-right: 130px;
+}
+
+.esperience .box:nth-child(even){
+    align-self: flex-start;
+    text-align: right;
+    margin-left: 130px;
+}
+.esperience .box:nth-child(even)::before{
+    content: ' ';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: -50px;
+    background: url(./assets/dot-timeItem.png) no-repeat;
+}
+.esperience .date{
+    color: #4A4A4A;
+    font-size: 1rem;
+}
+.esperience .duties{
+    color: #8A1737;
+    font-size: 1rem;
+    margin: 15px 0px;
+}
+.esperience .company{
+    color: #4A4A4A ;
+    margin: 15px 0px;
+}
+.esperience .description{
+    color: #9B9B9B;
+    margin: 10px 0px;
+    line-height: 1.3rem;
+}
+
+
+
+.worklist{
+    display: flex;
+    justify-content: center;
+}
+.worklist li{
+    width: 30%;
+    margin: 10px 10px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+.works li:hover {
+    box-shadow: 0px 0px 5px gray;
+  }
+.works {
+    padding-bottom:80px;
+}
+.worklist .pic{
+    /* padding: 50px 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border-radius: 6px 6px 0 0;
+}
+
+.works h2{
+    font-size: 1.6rem;
+    color: #FB56BF;
+    text-align: center;
+    margin: 20px 0px;
+}
+.works .one{
+    position: relative;
+    background-color: #F7A0E0;
+}
+.works .one .worklogo1{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.works .two{
+    background: #424242;
+}
+.works .three{
+    background: #8AD7FA;
+}
+.worklist h3{
+    font-size: 1.1rem;
+    padding: 15px 6px 5px;
+}
+.worklist p{
+    font-size: 1rem;
+    padding: 10px 6px;
+    color: #4A4A4A;
+}
+
+.about h2{
+    font-size: 1.6rem;
+    color: #FB56BF;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.about .intro{
+    display: flex;
+    justify-content:center;
+}
+.about .intro div{
+    margin: 5px 10px;
+}
+.about .intro .pic{
+    margin-left: 170px;
+}
+.about .intro .text {
+    margin-top: 40px;
+    padding: 0px 20px;
+}
+.about .intro .text p{
+    font-size: 1rem;
+    line-height: 1.8rem;
+    text-align: justify;
+}
+footer{
+    margin-top: 30px;
+    background: url(./assets/img-Looper-bg.png);
+    height: 87px;
+}
